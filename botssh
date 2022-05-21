@@ -37,17 +37,28 @@ menu() {
 PIX() {
     local msg
         msg="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="💠      ELIJA UNA Key A CONTINUACIÓN.     💠\n"
+        msg+="💠 BUENAS Y BIENVENIDO 💠\n"
         msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="🔁                 Key ALEATORIA                   🔁\n"
-        msg+="🔑 ├ 7b04ueogt-2535-4777-aa5c-4ec751561c58\n"
-        msg+="👤 ├ El Mandarin Sniff X\n"
+        msg+="👿 PARA OBTENER UN SERVICIO PAGADO PIX GRANDE👿\n"
+        msg+="📞 ├ WHATSAPP +59162069439\n"
+        msg+="📞 ├ WHATSAPP +59169008438"
+        msg+="👤 ├ El Mandarin Sniff"
+        msg+="├CLASES DESDE"
         msg+="💰 └ Cops$ 20,00\n"
+        msg+="5USD"
+        msg+="├VPS DESDE"
+        msg+="💰 └ Cops$ 20,00\n"
+        msg+="5USD"
+        msg+="├Y MUCHA MAS VARIEDAD DE APLIACIONES Y COSAS SOBRE NETFREE"
         msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="✅           CONFIRMAR PAGO           ✅\n"
+        msg+="✅       ENVIAR EL PAGO Y        ✅\n"
         msg+="ENVIAR PRUEBA A @gatesccn\n"
         msg+="▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n"
-        msg+="VERIFICACIÓN DE PAGO EN 24H\n"
+        msg+="VERIFICACIÓN DE PAGO EN 6 HORAS MAXIMO\n"
+        msg+="ACEPTAMOS\n"
+        msg+="-NEQUI   -BANCO COLOMBIA\n"
+        msg+="-PAYPAL  -AIRTM GIFTCARD\n"
+        msg+="-TIGO MONEY -BANCO UNION\n"
         ShellBot.sendMessage --chat_id ${message_chat_id[$id]} \
         --text "$(echo -e $msg)" \
         --reply_markup "$keyboard1" \
@@ -92,11 +103,11 @@ pix() {
 criarteste() {
     [[ $(grep -wc ${callback_query_from_id} lista) != '0' ]] && {
       ShellBot.sendMessage --chat_id ${callback_query_message_chat_id} \
-        --text "❌ Acceso denegado, consulta la hora de tu última creación y regresa solo cuando completes las 24 horas de tu última creación."
+        --text "❌ Acceso denegado, INTENTE EN 24 HORAS O COMPRE UN ACCESO VIP."
       return 0
     }
-    usuario=$(echo PBxyx$(( RANDOM% + 999 )))
-    senha=$((RANDOM% + 99999))
+    usuario=$(echo MANDARIN$(( RANDOM% + 999 )))
+    senha=$(echo GRATIS$(( RANDOM% + 999 )))
     limite='1'
     tempo='6'
     tuserdate=$(date '+%C%y/%m/%d' -d " +1 days")
@@ -212,10 +223,10 @@ infouser () {
 
 unset botao1
 botao1=''
-ShellBot.InlineKeyboardButton --button 'botao1' --line 1 --text '♻️ Generar LOGIN DE 6h ♻️' --callback_data 'gerarssh'
+ShellBot.InlineKeyboardButton --button 'botao1' --line 1 --text '📡 SSH GRATIS X6 HORAS 👿' --callback_data 'gerarssh'
 ShellBot.InlineKeyboardButton --button 'botao1' --line 2 --text '📥 Aplicacion MediaFire 📥' --callback_data '2' --url 'https://github.com/Gatesccn/APKSGRATIS/raw/main/base.apk' # LINK APP
-ShellBot.InlineKeyboardButton --button 'botao1' --line 3 --text '🤑 Sea REVENDEDOR 🤑️' --callback_data '2' --url 't.me/gatesccn' # LINK PV
-ShellBot.InlineKeyboardButton --button 'botao1' --line 4 --text '🏷️ ENVIAR COMPROVANTE 🏷️️' --callback_data '2' --url 't.me/gatesccn' # LINK PV
+ShellBot.InlineKeyboardButton --button 'botao1' --line 3 --text '👽 ENTRA A NUESTRO GRUPO PRIVADO 👽' --callback_data '2' --url 'https://t.me/+ucJjL1ZDuRsyNmRh' # LINK PV
+ShellBot.InlineKeyboardButton --button 'botao1' --line 4 --text '🔐 HABLA CON EL ADMIN🍊' --callback_data '2' --url 't.me/gatesccn' # LINK PV
 ShellBot.regHandleFunction --function criarteste --callback_data gerarssh
 ShellBot.regHandleFunction --function criarteste2 --callback_data gerarssh2
 ShellBot.regHandleFunction --function criarteste3 --callback_data gerarssh3
