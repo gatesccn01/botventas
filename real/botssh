@@ -226,6 +226,7 @@ botao1=''
 ShellBot.InlineKeyboardButton --button 'botao1' --line 1 --text '📡 SSH GRATIS X6 HORAS 👿' --callback_data 'gerarssh'
 ShellBot.InlineKeyboardButton --button 'botao1' --line 2 --text '📥 Aplicacion MediaFire 📥' --callback_data '2' --url 'https://github.com/Gatesccn/APKSGRATIS/raw/main/base.apk' # LINK APP
 ShellBot.InlineKeyboardButton --button 'botao1' --line 3 --text '👽 ENTRA A NUESTRO GRUPO PRIVADO 👽' --callback_data '2' --url 'https://t.me/+ucJjL1ZDuRsyNmRh' # LINK PV
+ShellBot.InlineKeyboardButton --button 'botao1' --line 3 --text '👽 ENTRA A NUESTRO GRUPO PRIVADO 2 👽' --callback_data '2' --url 'https://t.me/+ucJjL1ZDuRsyNmRh' # LINK PV
 ShellBot.InlineKeyboardButton --button 'botao1' --line 4 --text '🔐 HABLA CON EL ADMIN🍊' --callback_data '2' --url 't.me/gatesccn' # LINK PV
 ShellBot.regHandleFunction --function criarteste --callback_data gerarssh
 ShellBot.regHandleFunction --function criarteste2 --callback_data gerarssh2
